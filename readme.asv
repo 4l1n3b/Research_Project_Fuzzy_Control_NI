@@ -1,0 +1,7 @@
+Research Internship at GRASI - UFPI | Description
+========================================================================
+This project were developed during my reseach internship at the Research Group in Automation and Intelligent Systems (GRASI) at the Federal University of Piauí (UFPI).
+
+The goal is demonstrated how effectiveness is the fuzzy loggic applied in the control of system, especially MIMO systems, compared to PID classical approaches. Using a neonatal incubator model, Fuzzy and PID controllers as well as computational intelligence techniques, as Fuzzy Logic an PSO, were applied for tuning controllers more efficiently than classical methods.
+It goes through SISO to MIMO control techniques where the principal variables modelled are temperature and humidity.
+
