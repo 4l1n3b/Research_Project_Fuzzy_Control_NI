@@ -1,6 +1,6 @@
 clear all; clc;
-% =======================================
-%% Definição dos caminhos dos arquivos (Organizados por Variação)
+
+% Definição dos caminhos dos arquivos (Organizados por Variação)
 % Ordem: {Variação 1, Variação 2, Nominal(100)}
 files_PID = {'Tables/ZN_var_paramTEST/incubadora_var_param1ZN.csv', ...
     'Tables/ZN_var_paramTEST/incubadora_var_param2ZN.csv', ...
@@ -10,9 +10,7 @@ files_Fuzzy = {'Tables/Fuzzy/incubadora_var_param1Fuzzy.csv', ...
     'Tables/Fuzzy/incubadora_var_param2Fuzzy.csv', ...
     'Tables/Fuzzy/incubadora_var_param100Fuzzy.csv'};
 
-% =======================================
-%% Vetores de legenda e titulo
-% =======================================
+
 titulos_eng = {'Parametric Variation 1', ...
     'Parametric Variation 2', ...
     'Original Model'};
@@ -21,7 +19,7 @@ titulos_pt = {'Variação Paramétrica 1', ...
     'Modelo Original'};
 legend_eng = {' - Temperature', ' - Humidity','Temperature (°C)', 'Time (min)', 'Reference', 'Relative Humidity (%RH)'};
 legend_pt = {' - Temperatura', ' - Umidade','Temperatura (°C)', 'Tempo (min)', 'Referência', 'Umidade Relativa (%UR)'};
-% =======================================
+%===========
 %% Escolha de idioma
 % =======================================
 prompt = 'Qual a idioma vc deseja as figuras? (1 - PT-BR, 2 - Eng)\n';
@@ -38,10 +36,9 @@ else
     titulos = titulos_eng;
     legenda = legend_eng;
 end
+%===========
 
-% =======================================
-%% Design
-% =======================================
+%Design
 % Cores e Estilos
 cor_PID   = [0, 0.4470, 0.7410]; % Azul
 cor_Fuzzy = [0.8500, 0.3250, 0.0980]; % Laranja/Vermelho
@@ -193,7 +190,7 @@ for i = 1:length(titulos)
         grid on;
         legend('PID', 'Fuzzy', 'Location', 'best');
     else
-        %figure;
+        figure;
         subplot(3,length(titulos)-1,1); hold on;
         plot(tempo_min, data_PID.Controle_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Controle_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
