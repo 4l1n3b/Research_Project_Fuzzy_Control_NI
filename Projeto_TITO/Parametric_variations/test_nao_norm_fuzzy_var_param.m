@@ -163,7 +163,7 @@ for i = 1:5
     text(u_disc_erro_temp(idx), max_val + 0.05, labels{i}, 'Color', cores{i}, ...
         'HorizontalAlignment', 'center', 'FontWeight', 'bold', 'FontSize', tamanho_font);
 end
-title('Input: Error', 'FontSize',16);
+title('Input: Error', 'FontSize',14);
 xlabel('Error');
 ylabel('Membership Degree (\mu)');
 axis([-22 22 0 1.2]); grid on; hold off;
@@ -177,7 +177,7 @@ for i = 1:5
     text(u_disc_Derro_temp(idx), max_val + 0.05, labels{i}, 'Color', cores{i}, ...
         'HorizontalAlignment', 'center', 'FontWeight', 'bold', 'FontSize', tamanho_font);
 end
-title('Input: Error Variation', 'FontSize',16);
+title('Input: Error Variation', 'FontSize',14);
 xlabel('Error Variation');
 ylabel('Membership Degree (\mu)');
 axis([-3 3 0 1.2]); grid on; hold off;
@@ -194,7 +194,7 @@ for i = 1:length(x_coord)
         'HorizontalAlignment', 'center', 'FontWeight', 'bold', 'FontSize', tamanho_font);
 end
 set(gca, 'XTick', x_coord, 'XTickLabel', x_coord);
-title('Output: Control Signal Variation', 'FontSize',16);
+title('Output: Control Signal Variation', 'FontSize',14);
 xlabel('Singleton Value');
 ylabel('Membership Degree (\mu)');
 axis([-3 3 0 1.25]); grid on; hold off;

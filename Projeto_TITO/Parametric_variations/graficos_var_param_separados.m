@@ -63,7 +63,7 @@ for i = 1:length(titulos)
     tempo_min = data_PID.Tempo / 60; % Assume-se que o tempo é igual para ambos
 
     % Criar nova figura para cada variação
-
+    fonte  = 14;
     if i == 1
         % --- SUBPLOT 1: TEMPERATURA ---
         subplot(3, length(titulos)-1, 3); hold on;
@@ -71,7 +71,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -83,7 +83,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Umidade, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;
@@ -94,7 +94,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -106,7 +106,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Umidade, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;
@@ -118,7 +118,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -130,7 +130,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Saida_Umidade, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Saida_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;
@@ -156,7 +156,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Controle_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -167,7 +167,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Umidade, 'Color', cor_PID, 'LineWidth',.5);
         plot(tempo_min, data_Fuzzy.Controle_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;
@@ -177,7 +177,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Controle_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -187,7 +187,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Umidade, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Controle_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;
@@ -198,7 +198,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Temperatura, 'Color', cor_PID, 'LineWidth', .5);
         plot(tempo_min, data_Fuzzy.Controle_Temperatura, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{1}]);
+        title([titulos{i} legenda{1}], 'FontSize', fonte);
         ylabel(legenda{3});
         xlabel(legenda{4});
         grid on;
@@ -209,7 +209,7 @@ for i = 1:length(titulos)
         plot(tempo_min, data_PID.Controle_Umidade, 'Color', cor_PID, 'LineWidth',.5);
         plot(tempo_min, data_Fuzzy.Controle_Umidade, 'Color', cor_Fuzzy, 'LineWidth', 1.8);
 
-        title([titulos{i} legenda{2}]);
+        title([titulos{i} legenda{2}], 'FontSize', fonte);
         ylabel(legenda{6});
         xlabel(legenda{4});
         grid on;

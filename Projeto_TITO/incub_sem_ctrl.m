@@ -2,7 +2,7 @@
 %clear;clc; %close all;
 qtde_amostras = 600;
 T_amost = 18; % Tempo de amostragem em segundos
-ganho = 0.1;
+ganho = 1;
 %% INICIALIZAÇÕES
 r_1t = zeros(1, qtde_amostras);
 r_2u = zeros(1, qtde_amostras);
@@ -80,10 +80,14 @@ hold on
 plot(tempo/60, r_1t,estilo_Ref, 'LineWidth', 1)
 plot(tempo/60, y_1t,'Color',cor_saida, 'LineWidth', 1.5)
 %plot(tempo/60, erro1,'Color', cor_erro, 'LineWidth', .5)
-ylabel('Temperature (°C)');
-xlabel('Time (min)');
-title('Temperature Reference and Temperature Output', 'FontSize', 14);
-legend('Temperature Reference', 'Temperature Output')
+% ylabel('Temperature (°C)');
+% xlabel('Time (min)');
+% title('Temperature Reference and Temperature Output', 'FontSize', 14);
+% legend('Temperature Reference', 'Temperature Output')ylabel('Temperature (°C)');
+xlabel('Tempo (min)');
+ylabel('Temperatura (°C)');
+title('Saída de Temperatura', 'FontSize', 14);
+legend('Referência de Temperatura', 'Saída de Temperatura')
 grid on
 hold off
 
@@ -92,10 +96,14 @@ hold on
 plot(tempo/60, r_2u, estilo_Ref, 'LineWidth', 1)
 plot(tempo/60, y_2u,'Color',cor_saida, 'LineWidth', 1.5)
 %plot(tempo/60, erro2,'Color', cor_erro, 'LineWidth', .5)
-ylabel('Relative Humidity (%)');
-xlabel('Time (min)');
-title('Humidity Reference and Humidity Output', 'FontSize', 14);
-legend('Humidity Reference', 'Humidity Output')
+% ylabel('Relative Humidity (%)');
+% xlabel('Time (min)');
+% title('Humidity Reference and Humidity Output', 'FontSize', 14);
+% legend('Humidity Reference', 'Humidity Output')
+ylabel('Umidade Relativa (%UR)');
+xlabel('Tempo (min)');
+title('Saída de Umidade', 'FontSize', 14);
+legend('Referência de Umidade', 'Saída de Umidade')
 grid on
 hold off
 
